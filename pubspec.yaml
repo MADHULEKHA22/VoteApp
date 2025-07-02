@@ -1,0 +1,46 @@
+name: online_voting_app
+description: A digital voting app with Firebase backend
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase core services
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.18.0
+  cloud_firestore: ^4.12.2
+
+  # Charts and graphs
+  fl_chart: ^0.64.0
+
+  # HTTP client for API requests
+  http: ^1.1.0
+  geolocator: ^11.0.0
+
+
+  # Toast notifications
+  fluttertoast: ^8.2.2
+
+  # State management
+  provider: ^6.1.2
+  flutter_dotenv: ^5.2.1
+  webview_flutter: ^4.2.2
+  url_launcher: ^6.2.5
+ 
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/chatbot.html
+    - assets/.env
+
+

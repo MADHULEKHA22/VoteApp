@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "778581707854",
+    "project_id": "onlinevotingapp-e375b",
+    "storage_bucket": "onlinevotingapp-e375b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778581707854:android:32fcaeff9243ba7505871f",
+        "android_client_info": {
+          "package_name": "com.madhu.onlinevoting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBczD4uM2Koi7WPEpf7rD7qmDVLP8iEm0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

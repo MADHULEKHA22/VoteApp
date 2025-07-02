@@ -1,0 +1,57 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "onlinevotingapp-e375b",
+          "appId": "1:778581707854:android:8e5cdd0fc951fb9705871f",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "onlinevotingapp-e375b",
+          "configurations": {
+            "android": "1:778581707854:android:8e5cdd0fc951fb9705871f",
+            "ios": "1:778581707854:ios:2b1609eb7eaa1fbe05871f",
+            "macos": "1:778581707854:ios:2b1609eb7eaa1fbe05871f",
+            "web": "1:778581707854:web:0f36688886f2586a05871f",
+            "windows": "1:778581707854:web:11a3d72f4b75613105871f"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": "api"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+      
+    }
+  ]
+}
