@@ -3,8 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:online_voting_app/resultsscreen.dart';
 import 'dart:convert';
 
-const String backendBaseUrl = 'https://onlinevotingapp-e375b.web.app/api';
-
+const String backendBaseUrl = 'http://127.0.0.1:8000';
 
 class VoteScreen extends StatefulWidget {
   final String uid;

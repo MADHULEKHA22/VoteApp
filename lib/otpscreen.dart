@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-import 'loginscreen.dart'; // ✅ Update if path differs
+import 'loginscreen.dart'; // ✅ Update this import if your file path differs
 
-// ✅ Use your deployed backend URL
-const String backendBaseUrl = 'https://onlinevotingapp.web.app/api';
+const String backendBaseUrl = 'http://127.0.0.1:8000'; 
 
 class OTPScreen extends StatefulWidget {
   final String phone;
@@ -61,8 +60,8 @@ class _OTPScreenState extends State<OTPScreen> {
         final res = jsonDecode(response.body);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(res["detail"] ?? "❌ OTP verification failed"),
-          ),
+              content: Text(
+                  res["detail"] ?? "❌ OTP verification failed")),
         );
       }
     } catch (e) {
@@ -89,9 +88,9 @@ class _OTPScreenState extends State<OTPScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 40),
-              const Text(
+              Text(
                 "An OTP has been sent to:",
-                style: TextStyle(fontSize: 18),
+                style: const TextStyle(fontSize: 18),
               ),
               const SizedBox(height: 8),
               Text(
@@ -116,8 +115,7 @@ class _OTPScreenState extends State<OTPScreen> {
                   labelText: "6-digit OTP",
                   counterText: "",
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
+                      borderRadius: BorderRadius.circular(12)),
                 ),
               ),
               const SizedBox(height: 30),
@@ -127,8 +125,7 @@ class _OTPScreenState extends State<OTPScreen> {
                   minimumSize: const Size(double.infinity, 50),
                   backgroundColor: Colors.deepPurple,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
+                      borderRadius: BorderRadius.circular(12)),
                 ),
                 child: loading
                     ? const CircularProgressIndicator(color: Colors.white)

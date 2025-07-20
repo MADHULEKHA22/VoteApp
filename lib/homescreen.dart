@@ -8,8 +8,7 @@ import 'package:online_voting_app/votescreen.dart';
 import 'package:online_voting_app/faqscreen.dart';
 import 'package:online_voting_app/find_poll_station_screen.dart';
 
-const String backendBaseUrl = 'https://onlinevotingapp-e375b.web.app/api';
-
+const String backendBaseUrl = 'http://127.0.0.1:8000';
 
 class HomeScreen extends StatefulWidget {
   final String uid;

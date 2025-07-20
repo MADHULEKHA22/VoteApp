@@ -4,8 +4,10 @@ import 'dart:convert';
 
 import 'otpscreen.dart';
 
-// ✅ Updated to your Firebase Hosting URL
-const String backendBaseUrl = 'https://onlinevotingapp.web.app/api';
+// ✅ Use your backend URL (local or deployed)
+const String backendBaseUrl = 'http://127.0.0.1:8000'; 
+// OR e.g.
+// const String backendBaseUrl = 'https://my-voting-backend.fly.dev';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

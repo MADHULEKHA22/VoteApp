@@ -4,8 +4,7 @@ import 'dart:convert';
 
 import 'homescreen.dart'; // ✅ update path if needed
 
-// ✅ Updated backend URL for Firebase Hosting
-const String backendBaseUrl = "https://onlinevotingapp.web.app/api";
+const String backendBaseUrl = 'http://127.0.0.1:8000';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -84,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Logo
+            /// Logo
             CircleAvatar(
               radius: 50,
               backgroundColor: Colors.deepPurple.shade100,

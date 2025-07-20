@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:fl_chart/fl_chart.dart';
 
-const String backendBaseUrl = 'https://onlinevotingapp-e375b.web.app/api';
+const String backendBaseUrl = 'http://127.0.0.1:8000';
 
 class ResultsScreen extends StatefulWidget {
   const ResultsScreen({super.key});
